@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+        <div class="header">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation"><a href="/">Avalehele</a>
+                    </li>
+                </ul>
+            </nav>
+            <h2 class="text-muted">OÜ dot com</h2>
+        </div>
+  <div class="jumbo">
+		<h3 class="text-muted">OÜ {{company[1]}}</h3>
+		<table>
+		<tr><th>Nimi</th><th>Reg. number</th><th>Reg. kuupäev</th><th>Kogukapital</th></tr>
+		<tr><td>{{company[1]}}</td><td>{{company[2]}}</td><td>{{company[3]}}</td><td>{{company[4]}}</td></tr>
+		<br>
+        </table>
+        <table>
+        <h3 class="text-muted">Osanikud</h3>
+        <tr><th>Nimi</th><th>Isikukood/Reg. number</th><th>Osaniku osa</th></tr>
+        {% for owner in owners %}
+        <tr><td>{{owner[0]}}</td><td>{{owner[1]}}</td><td>{{owner[2]}}</td></tr>
+        {% endfor %}
+        </table>
+	</div>
+</div>
+
+{% endblock %}

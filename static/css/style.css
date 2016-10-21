@@ -1,0 +1,36 @@
+a
+{
+	text-decoration: none;	
+}
+
+table
+{ 
+	margin: 10px 0 30px 0;
+}
+
+table tr th, table tr td
+{ 
+	background: #3B3B3B;
+	color: #FFF;
+	padding: 7px 4px;
+	text-align: left;
+}
+  
+table tr td
+{ 
+	background: #E5E5DB;
+  	color: #47433F;
+  	border: 1px solid #FFF;
+}
+
+p
+{ 
+	padding: 10px 0 0 0;
+ 	line-height: 1.5em;
+}
+.ownerLabel
+{
+	display: inline-block;
+	width: 300px;
+
+}
